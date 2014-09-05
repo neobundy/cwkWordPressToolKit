@@ -1,0 +1,185 @@
+[
+    {
+        "id": "cwkwordpresstoolkit",
+        "caption": "cwkWordPressToolKit",
+        "children":
+        [
+          
+            {
+                "caption": "Quote",
+                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_quote]", "closing_tag": "[/su_quote]"}
+            },
+
+            {
+                "caption": "Pull Quote",
+                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_pulluote]", "closing_tag": "[/su_pullquote]"}
+            },            
+           {
+                "caption": "Math",
+                "command": "cwk_word_press_parser", "args": {"opening_tag": "[math]", "closing_tag": "[/math]"}
+            },  
+            {
+                "caption": "Note Box",
+                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_note]", "closing_tag": "[/su_note]", "attr": "color=#f4fca6"}
+
+            },            
+
+            {
+                "caption": "Tabs",
+                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tabs]", "closing_tag": "[/su_tabs]", "sub_opening_tag":"[su_tab]", "sub_closing_tag":"[/su_tab]", "sub_attr":"title",  "use_sub_header": "True", "sub_header_delimiter":"|"}
+            },
+
+            {
+                "caption": "Code",
+                "children":
+                [
+                    {
+                        "caption": "Shell", "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:sh decode:true"}
+                    },
+                    {
+                        "caption": "PHP", "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:php decode:true"}
+                    },
+                    {
+                        "caption": "Python", "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:python decode:true"}
+                    },                    
+                ]
+            },
+
+            {
+                "caption": "Animate",
+                "children":
+                [
+                    {
+                        "caption": "Bounce in", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"bounceIn\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                    },
+                    {
+                        "caption": "Flip in X In", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInX\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                    },
+                    {
+                        "caption": "Flip in Y", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInY\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                    },
+                    {
+                        "caption": "Fade in Down", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInDown\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                    },
+                    {
+                        "caption": "Fade in Left", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInLeft\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                    },
+                    {
+                        "caption": "Fade in Right", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInRight\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                    },
+
+                    {
+                        "caption": "Fade in Up", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInUp\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                    },
+
+                ]
+            },
+            {
+                "caption": "Button",
+                "children":
+                [
+                    {
+                        "caption": "Check", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: check\""}
+                    },
+                    {
+                        "caption": "Cogs", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: cogs\""}
+                    },
+                    {
+                        "caption": "Right Arrow", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: arrow-right\""}
+                    },
+                    {
+                        "caption": "Shopping Cart", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: shopping-cart\""}
+                    },
+                    {
+                        "caption": "Comments", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: comments\""}
+                    },
+                    {
+                        "caption": "Cloud Download", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: could-download\""}
+                    },
+                    
+                ]
+            },
+            {
+                "caption": "List",
+                "children":
+                [
+                    {
+                        "caption": "Arrow", "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-arrow-right"}
+                    },
+                    {
+                        "caption": "Check", "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-ok"}
+                    },
+                    {
+                        "caption": "Plus", "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-plus"}
+                    },
+                    {
+                        "caption": "Minus", "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-minus"}
+                    },
+                    
+                ]
+            },
+          {
+                "caption": "Box",
+                "children":
+                [
+                    {
+                        "caption": "Default", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "title","use_header": "True"}, 
+                    },
+                    {
+                        "caption": "Soft", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=soft title","use_header": "True"}, 
+                    },
+                    {
+                        "caption": "Glass", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=glass title","use_header": "True"}, 
+                    },
+
+                    {
+                        "caption": "Bubbles", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=bubbles title","use_header": "True"}, 
+                    },
+                    {
+                        "caption": "Noise", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=noise title","use_header": "True"}, 
+                    },
+                    
+                ]
+            },
+          {
+                "caption": "Spoiler",
+                "children":
+                [
+                    {
+                        "caption": "Fancy", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"style=fancy title",  "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+                    {
+                        "caption": "Plus Circle", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=plus-circle title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+                    {
+                        "caption": "Plus Square", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=plus-square-1 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+
+                    {
+                        "caption": "Arrow", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=arrow title",  "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+                    {
+                        "caption": "Arrow Circle Black", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=arrow-circle-1 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+                    {
+                        "caption": "Arrow Circle White", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=arrow-circle-2 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+                    {
+                        "caption": "Caret", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=caret title", "use_header": "True", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+                    {
+                        "caption": "Caret Square", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=caret-square title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+                    {
+                        "caption": "Folder Black", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=folder-1 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+                    {
+                        "caption": "Folder White", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=folder-2 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                    },
+                    
+                ]
+            },
+
+        ]
+    }
+]

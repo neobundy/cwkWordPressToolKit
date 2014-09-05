@@ -1,0 +1,3 @@
+[
+	{ "keys": ["ctrl+option+shift+w"], "command": "cwk_word_press_parser"},
+]

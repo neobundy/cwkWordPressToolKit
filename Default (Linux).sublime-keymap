@@ -1,3 +1,11 @@
 [
-	{ "keys": ["ctrl+option+shift+w"], "command": "cwk_word_press_parser"},
+        { "keys": ["super+ctrl+option+q"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_quote]", "closing_tag": "[/su_quote]"}},
+        { "keys": ["super+ctrl+option+n"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_note]", "closing_tag": "[/su_note]", "attr": "color=#f4fca6"}},
+        { "keys": ["super+ctrl+option+a"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"bounceIn\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]"}},
+        { "keys": ["super+ctrl+option+b"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=bubbles title","use_header": "True"}},
+        { "keys": ["super+ctrl+option+p"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"style=fancy title",  "use_sub_header": "True", "sub_header_delimiter":"|"}}, 
+        { "keys": ["super+ctrl+option+m"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[math]", "closing_tag": "[/math]"}}, 
+        { "keys": ["super+ctrl+option+i"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-arrow-right"}},
+        { "keys": ["super+ctrl+option+h"], "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:sh decode:true"}},
+
 ]

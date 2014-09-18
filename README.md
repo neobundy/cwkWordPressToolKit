@@ -7,9 +7,10 @@ WordPress ToolKit Sublime Text 3 Plugin
 # Supported Plugins
 
 - Ultimate Shortcode
-- Easy Bootstrap Shortcode
+- Easy Bootstrap Shortcode Pro & Add-ons
 - Crayon Syntax Highlighter
 - Easy WP LaTex
+
 # Shortcuts
 
 <kbd>CMD+CTRL+OPTION+Q</kbd>: Ultimate Shortcode Quote

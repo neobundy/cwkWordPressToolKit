@@ -9,62 +9,247 @@
                 "children":
                 [          
                     {
+                        "caption": "Divider",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_divider]", "closing_tag": "[/su_divider]", "attr":"top=yes text=\"Go to top\" style=default divider_color=#999999 link_color=#999999 size=3 margin=15"}
+                    },                         
+                    {
+                        "caption": "Document",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_document]", "closing_tag": "[/su_document]", "attr":"width=600 height=600 responsive=yes url=", "use_header":"True"}
+                    },                        
+                    {
+                        "caption": "Expand",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_expand]", "closing_tag": "[/su_expand]", "attr":"more_text=\"Show more\" less_text=\"Show less\" height=100 hide_less=no text_color=#333333 link_color=#0088FF link_style=default link_align=left more_icon=\"\" less_icon=\"\""}
+                    },                        
+                    {
+                        "caption": "Google Maps",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_gmap]", "closing_tag": "[/su_gmap]", "attr":"width=600 height=400 responsive=yes address=", "use_header":"True"}
+                    },                         
+                    {
+                        "caption": "Highlight",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_highlight]", "closing_tag": "[/su_highlight]", "attr":"background=#DDFF99 color=#000000"}
+                    },                         
+                    {
+                        "caption": "Icon",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_icon]", "closing_tag": "[/su_icon]", "attr":"icon=\"icon: angle-double-down\" background=#2967f7 color=#ffffff text_color=#2967f7 shape_size=4 radius=8 url=\"#\""}
+                    },                           
+                    {
                         "caption": "Image Frame",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_frame]", "closing_tag": "[/su_frame]"}
                     },                      
                     {
-                        "caption": "Icon",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_icon]", "closing_tag": "[/su_icon]", "attr":"icon=\"icon: angle-double-down\" background=#2967f7 color=#ffffff text_color=#2967f7 shape_size=4 radius=8 url=\"#\""}
-                    },                
+                        "caption": "Note Box",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_note]", "closing_tag": "[/su_note]", "attr": "color=#f4fca6"}
+                    },                                           
                     {
-                        "caption": "Quote",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_quote]", "closing_tag": "[/su_quote]"}
+                        "caption": "Private",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_private]", "closing_tag": "[/su_private]"}
                     },
-
                     {
                         "caption": "Pull Quote",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_pulluote]", "closing_tag": "[/su_pullquote]"}
                     },            
                     {
-                        "caption": "Note Box",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_note]", "closing_tag": "[/su_note]", "attr": "color=#f4fca6"}
-
-                    },            
-
+                        "caption": "Quote",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_quote]", "closing_tag": "[/su_quote]", "attr":"cite=\"\" url=\"\""}
+                    },
                     {
-                        "caption": "Shadow",
+                        "caption": "Spacer",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_spacer]", "closing_tag": "[/su_spacer]", "attr": "size=20"}
+
+                    },        
+                    {
+                        "caption": "Serive Box",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_service]", "closing_tag": "[/su_service]", "attr": "icone=\"icon: check\" icon_color=#333333 size=32 title=", "use_header":"True"}
+
+                    },                                
+                    {
+                        "caption": "Animate",
                         "children":
                         [
                             {
-                                "caption": "Default - No Panel",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow]", "closing_tag": "[/su_shadow]", "attr":"inline=yes"}
+                                "caption": "Bounce in", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"bounceIn\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Left Shadow with Panel",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_panel shadow=none]","closing_tag": "[/su_panel][/su_shadow]", "attr":"style=left"}
+                                "caption": "Flip in X In", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInX\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Right Shadow with Panel",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_panel shadow=none]","closing_tag": "[/su_panel][/su_shadow]", "attr":"style=right"}
-                            },                            
-                            {
-                                "caption": "Horizontal Shadow with Note",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_note]","closing_tag": "[/su_note][/su_shadow]", "attr":"style=horizontal"}
+                                "caption": "Flip in Y", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInY\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Vertical Shadow with Note",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_note]","closing_tag": "[/su_note][/su_shadow]", "attr":"style=vertical"}
+                                "caption": "Fade in Down", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInDown\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Bottom Shadow with Note",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_note]","closing_tag": "[/su_note][/su_shadow]", "attr":"style=bottom"}
+                                "caption": "Fade in Left", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInLeft\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Simple Shadow with Note",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_note]","closing_tag": "[/su_note][/su_shadow]", "attr":"style=simple"}
+                                "caption": "Fade in Right", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInRight\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                            },
+
+                            {
+                                "caption": "Fade in Up", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInUp\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                            },
+
+                        ]
+                    },                                      
+                  {
+                        "caption": "Box",
+                        "children":
+                        [
+                            {
+                                "caption": "Default", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "title","use_header": "True"}, 
+                            },
+                            {
+                                "caption": "Soft", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=soft title","use_header": "True"}, 
+                            },
+                            {
+                                "caption": "Glass", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=glass title","use_header": "True"}, 
+                            },
+
+                            {
+                                "caption": "Bubbles", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=bubbles title","use_header": "True"}, 
+                            },
+                            {
+                                "caption": "Noise", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=noise title","use_header": "True"}, 
+                            },
+                            
+                        ]
+                    },
+                    {
+                        "caption": "Button",
+                        "children":
+                        [
+                            {
+                                "caption": "Check", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: check\" size=1 background=#2D89EF color=#FFFFFF"}
+                            },
+                            {
+                                "caption": "Cogs", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: cogs\" size=1 background=#2D89EF color=#FFFFFF"}
+                            },
+                            {
+                                "caption": "Right Arrow", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: arrow-right\" size=1 background=#2D89EF color=#FFFFFF"}
+                            },
+                            {
+                                "caption": "Shopping Cart", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: shopping-cart\" size=1 background=#2D89EF color=#FFFFFF"}
+                            },
+                            {
+                                "caption": "Comments", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: comments\" size=1 background=#2D89EF color=#FFFFFF"}
+                            },
+                            {
+                                "caption": "Cloud Download", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: could-download\" size=1 background=#2D89EF color=#FFFFFF"}
+                            },
+                            
+                        ]
+                    },              
+                    {
+                        "caption": "Columns",
+                        "children":
+                        [
+                            {
+                                "caption": "Single Colum",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_row]", "closing_tag": "[/su_row]", "sub_opening_tag":"[su_row]", "sub_closing_tag":"[/su_row]", "sub_attr":"size=\"1/1\""}
+                            },
+                            {
+                                "caption": "2 Colums",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_row]", "closing_tag": "[/su_row]", "sub_opening_tag":"[su_row]", "sub_closing_tag":"[/su_row]", "sub_attr":"size=\"1/2\""}
+                            },
+                            {
+                                "caption": "3 Columns",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_row]", "closing_tag": "[/su_row]", "vertical":"yes", "sub_opening_tag":"[su_row]", "sub_closing_tag":"[/su_row]", "sub_attr":"size=\"1/3\""}
                             },
                         ]
-                    },                           
+                    },                                 
+                    {
+                        "caption": "Dropcap",
+                        "children":
+                        [
+                            {
+                                "caption": "Default",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_dropcap]", "closing_tag": "[/su_dropcap]", "attr":"style=default size=3"}
+                            },
+                            {
+                                "caption": "Flat",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_dropcap]", "closing_tag": "[/su_dropcap]", "attr":"style=flat size=3"}
+                            },
+                            {
+                                "caption": "Light",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_dropcap]", "closing_tag": "[/su_dropcap]", "attr":"style=light size=3"}
+                            },
+                            {
+                                "caption": "Simple",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_dropcap]", "closing_tag": "[/su_dropcap]", "attr":"style=simple size=3"}
+                            },
+                        ]
+                    }, 
+                    {
+                        "caption": "Label",
+                        "children":
+                        [
+                            {
+                                "caption": "Default",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_label]", "closing_tag": "[/su_label]", "attr":"type=default"}
+                            },
+                            {
+                                "caption": "Black",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_label]", "closing_tag": "[/su_label]", "attr":"type=black"}
+                            },
+                            {
+                                "caption": "Info",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_label]", "closing_tag": "[/su_label]", "attr":"type=info"}
+                            },
+                            {
+                                "caption": "Important",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_label]", "closing_tag": "[/su_label]", "attr":"type=important"}
+                            },
+                            {
+                                "caption": "Success",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_label]", "closing_tag": "[/su_label]", "attr":"type=success"}
+                            },
+                            {
+                                "caption": "Warning",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_label]", "closing_tag": "[/su_label]", "attr":"type=warning"}
+                            },
+
+                        ]
+                    },               
+                    {
+                        "caption": "Multimedia",
+                        "children":
+                        [
+                            {
+                                "caption": "YouTube",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_youtube]", "closing_tag": "[/su_youtube]", "attr":"autoplay=no url=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Vimeo",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_vimeo]", "closing_tag": "[/su_vimeo]", "attr":"url=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Self-Hosted Video",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_video]", "closing_tag": "[/su_video]", "attr":"url=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Self-Hosted Audio",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_audio]", "closing_tag": "[/su_audio]", "attr":"url=", "use_header":"True"}
+                            },
+                        ]
+                    },                                                       
                     {
                         "caption": "Panel",
                         "children":
@@ -72,6 +257,14 @@
                             {
                                 "caption": "Default",
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_panel]", "closing_tag": "[/su_panel]"}
+                            },
+                            {
+                                "caption": "Panel with Style",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_panel]", "closing_tag": "[/su_panel]", "attr":"background=#ffffff color=#333333 border=\"1px solid #cccccc\" shadow=\"0px 1px 2px #eeeeee\" radius=0 text_align=left url=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Photo Panel",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_photo_panel]", "closing_tag": "[/su_photo_panel]", "attr":"background=#ffffff color=#333333 border=\"1px solid #cccccc\" shadow=\"0 1px 2px #eeeeee\" radius=0 text_align=left photo=\"src\" url=", "use_header":"True"}
                             },
                             {
                                 "caption": "Default - Shadow",
@@ -118,178 +311,109 @@
                         ]
                     },                      
                     {
-                        "caption": "Testimonial",
+                        "caption": "Shadow",
                         "children":
                         [
                             {
-                                "caption": "Default",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_testimonial]", "closing_tag": "[/su_testimonial]", "attr":"name=\"name\" photo=\"photo_url\" company=\"company name\" url=\"http://example.com/\""}
+                                "caption": "Default - No Panel",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow]", "closing_tag": "[/su_shadow]", "attr":"inline=yes"}
                             },
                             {
-                                "caption": "Default - No Border",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_testimonial]", "closing_tag": "[/su_testimonial]", "attr":"name=\"name\" photo=\"photo_url\" company=\"company name\" url=\"http://example.com/\" border=no"}
+                                "caption": "Left Shadow with Panel",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_panel shadow=none]","closing_tag": "[/su_panel][/su_shadow]", "attr":"style=left"}
                             },
                             {
-                                "caption": "Text Only",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_testimonial]", "closing_tag": "[/su_testimonial]", "attr":"name=\"name\" company=\"company name\" "}
+                                "caption": "Right Shadow with Panel",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_panel shadow=none]","closing_tag": "[/su_panel][/su_shadow]", "attr":"style=right"}
+                            },                            
+                            {
+                                "caption": "Horizontal Shadow with Note",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_note]","closing_tag": "[/su_note][/su_shadow]", "attr":"style=horizontal"}
                             },
                             {
-                                "caption": "Text Only - No Border",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_testimonial]", "closing_tag": "[/su_testimonial]", "attr":"name=\"name\" company=\"company name\" border=no"}
-                            },
-                        ]
-                    },                          
-                    {
-                        "caption": "Video",
-                        "children":
-                        [
-                            {
-                                "caption": "YouTube",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_youtube]", "closing_tag": "[/su_youtube]", "attr":"autoplay=no url=", "use_header":"True"}
+                                "caption": "Vertical Shadow with Note",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_note]","closing_tag": "[/su_note][/su_shadow]", "attr":"style=vertical"}
                             },
                             {
-                                "caption": "Vimeo",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_vimeo]", "closing_tag": "[/su_vimeo]", "attr":"url=", "use_header":"True"}
+                                "caption": "Bottom Shadow with Note",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_note]","closing_tag": "[/su_note][/su_shadow]", "attr":"style=bottom"}
                             },
                             {
-                                "caption": "Self-Hosted Video",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_video]", "closing_tag": "[/su_video]", "attr":"url=", "use_header":"True"}
+                                "caption": "Simple Shadow with Note",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_shadow][su_note]","closing_tag": "[/su_note][/su_shadow]", "attr":"style=simple"}
                             },
-                            {
-                                "caption": "Self-Hosted Audio",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_audio]", "closing_tag": "[/su_audio]", "attr":"url=", "use_header":"True"}
-                            },
-                        ]
-                    },                             
-                    {
-                        "caption": "Columns",
-                        "children":
-                        [
-                            {
-                                "caption": "Single Colum",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_row]", "closing_tag": "[/su_row]", "sub_opening_tag":"[su_row]", "sub_closing_tag":"[/su_row]", "sub_attr":"size=\"1/1\""}
-                            },
-                            {
-                                "caption": "2 Colums",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_row]", "closing_tag": "[/su_row]", "sub_opening_tag":"[su_row]", "sub_closing_tag":"[/su_row]", "sub_attr":"size=\"1/2\""}
-                            },
-                            {
-                                "caption": "3 Columns",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_row]", "closing_tag": "[/su_row]", "vertical":"yes", "sub_opening_tag":"[su_row]", "sub_closing_tag":"[/su_row]", "sub_attr":"size=\"1/3\""}
-                            },
-                        ]
-                    },                      
-                    {
-                        "caption": "Tabs",
-                        "children":
-                        [
-                            {
-                                "caption": "Default",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tabs]", "closing_tag": "[/su_tabs]", "sub_opening_tag":"[su_tab]", "sub_closing_tag":"[/su_tab]", "sub_attr":"title",  "use_sub_header": "True", "sub_header_delimiter":"|"}
-                            },
-                            {
-                                "caption": "Vertical",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tabs]", "closing_tag": "[/su_tabs]", "vertical":"yes", "sub_opening_tag":"[su_tab]", "sub_closing_tag":"[/su_tab]", "sub_attr":"title",  "use_sub_header": "True", "sub_header_delimiter":"|"}
-                            },
-                        ]
-                    },                    
-                    {
-                        "caption": "Animate",
-                        "children":
-                        [
-                            {
-                                "caption": "Bounce in", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"bounceIn\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
-                            },
-                            {
-                                "caption": "Flip in X In", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInX\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
-                            },
-                            {
-                                "caption": "Flip in Y", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInY\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
-                            },
-                            {
-                                "caption": "Fade in Down", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInDown\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
-                            },
-                            {
-                                "caption": "Fade in Left", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInLeft\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
-                            },
-                            {
-                                "caption": "Fade in Right", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInRight\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
-                            },
-
-                            {
-                                "caption": "Fade in Up", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInUp\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
-                            },
-
                         ]
                     },
-                    {
-                        "caption": "Button",
-                        "children":
-                        [
-                            {
-                                "caption": "Check", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: check\" size=1 background=#2D89EF color=#FFFFFF"}
-                            },
-                            {
-                                "caption": "Cogs", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: cogs\" size=1 background=#2D89EF color=#FFFFFF"}
-                            },
-                            {
-                                "caption": "Right Arrow", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: arrow-right\" size=1 background=#2D89EF color=#FFFFFF"}
-                            },
-                            {
-                                "caption": "Shopping Cart", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: shopping-cart\" size=1 background=#2D89EF color=#FFFFFF"}
-                            },
-                            {
-                                "caption": "Comments", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: comments\" size=1 background=#2D89EF color=#FFFFFF"}
-                            },
-                            {
-                                "caption": "Cloud Download", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: could-download\" size=1 background=#2D89EF color=#FFFFFF"}
-                            },
-                            
-                        ]
-                    },
-
-                  {
-                        "caption": "Box",
-                        "children":
-                        [
-                            {
-                                "caption": "Default", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "title","use_header": "True"}, 
-                            },
-                            {
-                                "caption": "Soft", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=soft title","use_header": "True"}, 
-                            },
-                            {
-                                "caption": "Glass", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=glass title","use_header": "True"}, 
-                            },
-
-                            {
-                                "caption": "Bubbles", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=bubbles title","use_header": "True"}, 
-                            },
-                            {
-                                "caption": "Noise", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=noise title","use_header": "True"}, 
-                            },
-                            
-                        ]
-                    },
-                      {
+               
+                        {
+                            "caption": "Slider",
+                            "children":
+                            [
+                                {
+                                    "caption": "Default", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]"}, 
+                                },
+                                {
+                                    "caption": "Light Skin", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]", "attr":"style=light"}, 
+                                },
+                                {
+                                    "caption": "Dark Skin", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]", "attr":"style=dark"}, 
+                                },
+                                {
+                                    "caption": "Image - Fade Up", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]", "attr":"effect=fadeUp autoplay=3 style=dark"}, 
+                                },
+                                {
+                                    "caption": "News Ticker", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]", "attr":"effect=fade autoplay=3 arrows=no style=dark"}, 
+                                },
+                            ]
+                        },                                        
+                        {
+                            "caption": "Splash Screen",
+                            "children":
+                            [
+                                {
+                                    "caption": "Dark", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_splash]", "closing_tag": "[/su_splash]", "attr":"style=dark width=480 opacity=80 onclick=close-bg delay=0 esc=yes close=yes once=no url=", "use_header":"True"}, 
+                                },
+                                {
+                                    "caption": "Dark Boxed", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_splash]", "closing_tag": "[/su_splash]", "attr":"style=dark-boxed width=480 opacity=80 onclick=close-bg delay=0 esc=yes close=yes once=no url=", "use_header":"True"}, 
+                                },
+                                {
+                                    "caption": "Light", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_splash]", "closing_tag": "[/su_splash]", "attr":"style=light width=480 opacity=80 onclick=close-bg delay=0 esc=yes close=yes once=no url=", "use_header":"True"}, 
+                                },
+                                {
+                                    "caption": "Light Boxed", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_splash]", "closing_tag": "[/su_splash]", "attr":"style=light-boxed width=480 opacity=80 onclick=close-bg delay=0 esc=yes close=yes once=no url=", "use_header":"True"}, 
+                                },
+                                {
+                                    "caption": "Blue Boxed", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_splash]", "closing_tag": "[/su_splash]", "attr":"style=blue-boxed width=480 opacity=80 onclick=close-bg delay=0 esc=yes close=yes once=no url=", "use_header":"True"}, 
+                                },
+                                {
+                                    "caption": "Light Boxed Bluee", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_splash]", "closing_tag": "[/su_splash]", "attr":"style=light-boxed-blue width=480 opacity=80 onclick=close-bg delay=0 esc=yes close=yes once=no url=", "use_header":"True"}, 
+                                },
+                                {
+                                    "caption": "Light Boxed Green", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_splash]", "closing_tag": "[/su_splash]", "attr":"style=light-boxed-green width=480 opacity=80 onclick=close-bg delay=0 esc=yes close=yes once=no url=", "use_header":"True"}, 
+                                },
+                                {
+                                    "caption": "Light Boxed Orange", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_splash]", "closing_tag": "[/su_splash]", "attr":"style=light-boxed-orange width=480 opacity=80 onclick=close-bg delay=0 esc=yes close=yes once=no url=", "use_header":"True"}, 
+                                },
+                                {
+                                    "caption": "Maintenance", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_splash]", "closing_tag": "[/su_splash]", "attr":"style=maintenance width=480 opacity=80 onclick=close-bg delay=0 esc=yes close=yes once=no url=", "use_header":"True"}, 
+                                },
+                            ]
+                        },                                  
+                     {
                             "caption": "Spoiler",
                             "children":
                             [
@@ -335,33 +459,97 @@
                                 },
                                 
                             ]
-                        },                            
-                        {
-                            "caption": "Content Slider",
-                            "children":
-                            [
-                                {
-                                    "caption": "Default", 
-                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]"}, 
-                                },
-                                {
-                                    "caption": "Light Skin", 
-                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]", "attr":"style=light"}, 
-                                },
-                                {
-                                    "caption": "Dark Skin", 
-                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]", "attr":"style=dark"}, 
-                                },
-                                {
-                                    "caption": "Image - Fade Up", 
-                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]", "attr":"effect=fadeUp autoplay=3 style=dark"}, 
-                                },
-                                {
-                                    "caption": "News Ticker", 
-                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_content_slider]", "closing_tag": "[/su_content_slider]", "sub_opening_tag":"[su_content_slide][su_panel]", "sub_closing_tag":"[/su_panel][/su_content_slide]", "attr":"effect=fade autoplay=3 arrows=no style=dark"}, 
-                                },
-                            ]
-                        },                                  
+                        },                                 
+                    {
+                        "caption": "Tabs",
+                        "children":
+                        [
+                            {
+                                "caption": "Default",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tabs]", "closing_tag": "[/su_tabs]", "sub_opening_tag":"[su_tab]", "sub_closing_tag":"[/su_tab]", "sub_attr":"title",  "use_sub_header": "True", "sub_header_delimiter":"|"}
+                            },
+                            {
+                                "caption": "Vertical",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tabs]", "closing_tag": "[/su_tabs]", "vertical":"yes", "sub_opening_tag":"[su_tab]", "sub_closing_tag":"[/su_tab]", "sub_attr":"title",  "use_sub_header": "True", "sub_header_delimiter":"|"}
+                            },
+                        ]
+                    },                                                                  
+                    {
+                        "caption": "Testimonial",
+                        "children":
+                        [
+                            {
+                                "caption": "Default",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_testimonial]", "closing_tag": "[/su_testimonial]", "attr":"name=\"name\" photo=\"photo_url\" company=\"company name\" url=\"http://example.com/\""}
+                            },
+                            {
+                                "caption": "Default - No Border",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_testimonial]", "closing_tag": "[/su_testimonial]", "attr":"name=\"name\" photo=\"photo_url\" company=\"company name\" url=\"http://example.com/\" border=no"}
+                            },
+                            {
+                                "caption": "Text Only",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_testimonial]", "closing_tag": "[/su_testimonial]", "attr":"name=\"name\" company=\"company name\" "}
+                            },
+                            {
+                                "caption": "Text Only - No Border",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_testimonial]", "closing_tag": "[/su_testimonial]", "attr":"name=\"name\" company=\"company name\" border=no"}
+                            },
+                        ]
+                    },                          
+                    {
+                        "caption": "Tooltip",
+                        "children":
+                        [
+                            {
+                                "caption": "Light",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=light position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Dark",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=dark position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Yellow",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=yellow position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Green",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=green position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Red",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=red position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Blue",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=blue position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "YouTube",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=youtube position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Tipsy",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=tipsy position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Bootstrap",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=bootstrap position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Jtools",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=jtools position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Tipped",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=tipped position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                            {
+                                "caption": "Cluetip",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tooltip]", "closing_tag": "[/su_tooltip]", "attr":"style=cluetip position=top shadow=no rounded=no size=default title= behavior=hover close=no content=", "use_header":"True"}
+                            },
+                        ]
+                    },                      
                 ]
             }, 
             {
@@ -375,6 +563,14 @@
                     {
                         "caption": "Google Maps",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[googlemap]", "closing_tag": "[/googlemap]", "attr":"width=false height=400 latitude=37.658401 longitude=126.764201 zoom=3 type=ROADMAP address="}
+                    },                
+                    {
+                        "caption": "Icon - Font Awesome",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[icon]", "closing_tag": "", "attr":"type=fa-apple icontype=fa color=#81d742 fontsize=40"}
+                    },                
+                    {
+                        "caption": "Icon - Glyphicon",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[icon]", "closing_tag": "", "attr":"type=glyphicon-asterisk icontype=glyphicon color=#81d742 fontsize=40"}
                     },                
                     {
                         "caption": "Jumbotron",
@@ -413,11 +609,11 @@
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[space]", "closing_tag": "[/space]", "attr":"height=30"}
                     },                
                     {
-                        "caption": "YouTube Video",
+                        "caption": "Video - YoutTube",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[oscvideo]", "closing_tag": "", "attr":"type=youtube dimension=\"16by9\" link=", "use_header":"True"}
                     },                               
                     {
-                        "caption": "Vimeo Video",
+                        "caption": "Video - Vimeo",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[oscvideo]", "closing_tag": "", "attr":"type=vimeo dimension=\"16by9\" link=", "use_header":"True"}
                     },                              
                     {
@@ -451,83 +647,83 @@
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=pulse time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "flipInX", 
+                                "caption": "Flip In X", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=flipInX time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "fadeIn", 
+                                "caption": "Fade In", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeIn time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "fadeInUp", 
+                                "caption": "Fade In Up", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInUp time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "fadeInLeft", 
+                                "caption": "Fade In Left", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInLeft time=everytime duration=3 delay=0.5"}, 
                             },                            
                             {
-                                "caption": "fadeInRight", 
+                                "caption": "Fade In Right", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInRight time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "fadeInDown", 
+                                "caption": "Fade In Down", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInDown time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "fadeInUpBig", 
+                                "caption": "Fade In Up Big", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInUpBig time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "fadeInDownBig", 
+                                "caption": "Fade In Down Big", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInDownBig time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "fadeInRightBig", 
+                                "caption": "Fade In Right Big", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInRightBig time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "bounceIn", 
+                                "caption": "Bounce In", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=bounceIn time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "bounceInDown", 
+                                "caption": "Bounce In Down", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=bounceInDown time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "bounceInLeft", 
+                                "caption": "Bounce In Left", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=bounceInLeft time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "bounceInRight", 
+                                "caption": "Bounce In Right", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=bounceInRight time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "rotateInUpLeft", 
+                                "caption": "Rotate In Up Left", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rotateInUpLeft time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "rotateInDownLeft", 
+                                "caption": "Rotate In Down Left", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rotateInDownLeft time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "rotateInUpRight", 
+                                "caption": "Rotate In Up Right", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rotateInUpRight time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "rotateInDownRight", 
+                                "caption": "Rotate In Down Right", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rotateInDownRight time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "lightSpeedRight", 
+                                "caption": "Light Speed Right", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=lightSpeedRight time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "lightSpeedLeft", 
+                                "caption": "Light Speed Left", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=lightSpeedLeft time=everytime duration=3 delay=0.5"}, 
                             },
                             {
-                                "caption": "rollin", 
+                                "caption": "Roll In", 
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rollin time=everytime duration=3 delay=0.5"}, 
                             },
                         ]

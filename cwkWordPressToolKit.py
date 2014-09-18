@@ -25,6 +25,21 @@ class CwkWordPressParser(sublime_plugin.TextCommand,):
 		self.sub_header_delimiter = '\\' + sub_header_delimiter
 		self.newline = newline
 
+		# clean up JSON idiosyncratic booleans
+
+		if self.use_header == 'True':
+			self.use_header = True
+		if self.use_header == 'False':
+			self.use_header = False		
+		if self.use_sub_header == 'True':
+			self.use_sub_header = True
+		if self.use_sub_header == 'False':
+			self.use_sub_header = False
+		if self.newline == 'False':
+			self.newline = False
+		if self.newline == 'True':
+			self.newline = True
+
 
 		if self.opening_tag:
 			# get active window and view
@@ -37,7 +52,7 @@ class CwkWordPressParser(sublime_plugin.TextCommand,):
 
 					if self.attr:
 						tag_delimiter = self.opening_tag[-1]
-						if self.use_header == 'True':
+						if self.use_header:
 							self.opening_tag = opening_tag[:-1] + " " + self.attr + "=" + '"' + currentSelection.splitlines()[0]  + '"' + tag_delimiter
 							currentSelection = currentSelection.splitlines()[1:]
 						else:
@@ -51,7 +66,7 @@ class CwkWordPressParser(sublime_plugin.TextCommand,):
 							self.sub_opening_tag = sub_opening_tag[:-1] + " " +  self.sub_attr + tag_delimiter						
 						lines = []
 						for line in currentSelection:
-							if self.use_sub_header == 'True':
+							if self.use_sub_header:
 								sub_lines = re.split(self.sub_header_delimiter, line)
 								if sub_lines:
 									sub_header = sub_lines[0].strip()
@@ -64,13 +79,13 @@ class CwkWordPressParser(sublime_plugin.TextCommand,):
 
 
 							lines.append( self.sub_opening_tag + line + self.sub_closing_tag )
-						if self.newline != 'False':
+						if self.newline:
 							currentSelection =  self.opening_tag + "\n" + "\n".join( lines )  + "\n" +  self.closing_tag
 						else:
 							currentSelection =  self.opening_tag + "".join( lines )  +  self.closing_tag
 
 					else: 
-						if self.newline != 'False':
+						if self.newline:
 							currentSelection = self.opening_tag + "\n" +  "\n".join( currentSelection ) + "\n" +  self.closing_tag
 						else:
 							currentSelection = self.opening_tag + "".join( currentSelection )  +  self.closing_tag

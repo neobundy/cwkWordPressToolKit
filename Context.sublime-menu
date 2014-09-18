@@ -1297,17 +1297,70 @@
                 "children":
                 [
                     {
-                        "caption": "Shell", 
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:sh decode:true"}
+                        "caption": "AppleScript", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:applescript decode:true\""}
                     },
                     {
+                        "caption": "CSS", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:css decode:true\""}
+                    },
+                    {
+                        "caption": "C#", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:c# decode:true\""}
+                    },
+                    {
+                        "caption": "Java", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:java decode:true\""}
+                    },                    
+                    {
+                        "caption": "JavaScript", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:javascript decode:true\""}
+                    },                    
+                    {
+                        "caption": "MySQL", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:mysql decode:true\""}
+                    },                          
+                    {
+                        "caption": "Objective-C", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:objective-c decode:true\""}
+                    },                    
+                    {
                         "caption": "PHP", 
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:php decode:true"}
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:php decode:true\""}
+                    },                    
+                    {
+                        "caption": "PowerShell", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:powershell decode:true\""}
                     },
                     {
                         "caption": "Python", 
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:python decode:true"}
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:python decode:true\""}
+                    },                      
+                    {
+                        "caption": "R", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:r decode:true\""}
                     },                    
+                    {
+                        "caption": "Ruby", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:ruby decode:true\""}
+                    },                    
+                    {
+                        "caption": "Shell", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:sh decode:true\""}
+                    },                    
+                    {
+                        "caption": "Swift", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:swift decode:true\""}
+                    },                    
+                    {
+                        "caption": "Tex", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:Tex decode:true\""}
+                    },                    
+                    {
+                        "caption": "Vim", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:Vim decode:true\""}
+                    },
+
                 ]
             },
 

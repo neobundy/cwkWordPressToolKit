@@ -166,7 +166,43 @@
                             "caption": "Minus", "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-minus"}
                         },
                     ]
+                },                
+                {
+                    "caption": "Highligts",
+                    "children":
+                    [
+                        {
+                            "caption": "Blue", "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=blue", "newline": "False"}
+                        },
+                        {
+                            "caption": "Yellow", "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=yellow", "newline": "False"}
+                        },                        
+                        {
+                            "caption": "Red", "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=red", "newline": "False"}
+                        },                        
+
+                    ]
                 },
+              {
+                    "caption": "Toggles",
+                    "children":
+                    [
+                        {
+                            "caption": "Play", "command": "cwk_word_press_parser", "args": {"opening_tag": "[toggles]", "closing_tag": "[/toggles]", "sub_opening_tag":"[toggle]", "sub_closing_tag":"[/toggle]", "sub_attr":"icon=glyphicon-play icontype=glyphicon title", "use_sub_header":"True","sub_header_delimiter":"|"}, 
+                        },
+                        
+                    ]
+                },                 
+                {
+                    "caption": "BoxFrame",
+                    "children":
+                    [
+                        {
+                            "caption": "Raised Box", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow raised-box\""}, 
+                        },
+                        
+                    ]
+                },           
                 ]
             },
             {

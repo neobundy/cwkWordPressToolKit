@@ -7,5 +7,6 @@
         { "keys": ["super+ctrl+option+m"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[math]", "closing_tag": "[/math]"}}, 
         { "keys": ["super+ctrl+option+i"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-arrow-right"}},
         { "keys": ["super+ctrl+option+h"], "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:sh decode:true"}},
-
+        { "keys": ["super+ctrl+option+y"], "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:python decode:true"}},
+        { "keys": ["super+ctrl+option+b"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=blue", "newline":"False"}},
 ]

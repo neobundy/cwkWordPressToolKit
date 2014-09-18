@@ -28,33 +28,45 @@
                     },            
                     {
                         "caption": "Tabs",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tabs]", "closing_tag": "[/su_tabs]", "sub_opening_tag":"[su_tab]", "sub_closing_tag":"[/su_tab]", "sub_attr":"title",  "use_sub_header": "True", "sub_header_delimiter":"|"}
-                    },
-                    {
+                        "children":
+                        [
+                            {
+                                "caption": "Tabs",
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_tabs]", "closing_tag": "[/su_tabs]", "sub_opening_tag":"[su_tab]", "sub_closing_tag":"[/su_tab]", "sub_attr":"title",  "use_sub_header": "True", "sub_header_delimiter":"|"}
+                            },
+                        ]
+                    },                    {
                         "caption": "Animate",
                         "children":
                         [
                             {
-                                "caption": "Bounce in", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"bounceIn\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                                "caption": "Bounce in", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"bounceIn\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Flip in X In", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInX\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                                "caption": "Flip in X In", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInX\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Flip in Y", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInY\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                                "caption": "Flip in Y", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"flipInY\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Fade in Down", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInDown\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                                "caption": "Fade in Down", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInDown\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Fade in Left", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInLeft\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                                "caption": "Fade in Left", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInLeft\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
                             {
-                                "caption": "Fade in Right", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInRight\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                                "caption": "Fade in Right", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInRight\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
 
                             {
-                                "caption": "Fade in Up", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInUp\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
+                                "caption": "Fade in Up", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_animate]", "closing_tag": "[/su_animate]", "attr":"type=\"fadeInUp\" delay=\"1\"",  "sub_opening_tag": "[su_note]", "sub_closing_tag":"[/su_note]",}
                             },
 
                         ]
@@ -64,22 +76,28 @@
                         "children":
                         [
                             {
-                                "caption": "Check", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: check\""}
+                                "caption": "Check", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: check\""}
                             },
                             {
-                                "caption": "Cogs", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: cogs\""}
+                                "caption": "Cogs", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: cogs\""}
                             },
                             {
-                                "caption": "Right Arrow", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: arrow-right\""}
+                                "caption": "Right Arrow", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: arrow-right\""}
                             },
                             {
-                                "caption": "Shopping Cart", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: shopping-cart\""}
+                                "caption": "Shopping Cart", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: shopping-cart\""}
                             },
                             {
-                                "caption": "Comments", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: comments\""}
+                                "caption": "Comments", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: comments\""}
                             },
                             {
-                                "caption": "Cloud Download", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: could-download\""}
+                                "caption": "Cloud Download", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_button]", "closing_tag": "[/su_button]", "attr":"icon=\"icon: could-download\""}
                             },
                             
                         ]
@@ -90,20 +108,25 @@
                         "children":
                         [
                             {
-                                "caption": "Default", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "title","use_header": "True"}, 
+                                "caption": "Default", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "title","use_header": "True"}, 
                             },
                             {
-                                "caption": "Soft", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=soft title","use_header": "True"}, 
+                                "caption": "Soft", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=soft title","use_header": "True"}, 
                             },
                             {
-                                "caption": "Glass", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=glass title","use_header": "True"}, 
+                                "caption": "Glass", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=glass title","use_header": "True"}, 
                             },
 
                             {
-                                "caption": "Bubbles", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=bubbles title","use_header": "True"}, 
+                                "caption": "Bubbles", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=bubbles title","use_header": "True"}, 
                             },
                             {
-                                "caption": "Noise", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=noise title","use_header": "True"}, 
+                                "caption": "Noise", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_box]", "closing_tag": "[/su_box]", "attr": "style=noise title","use_header": "True"}, 
                             },
                             
                         ]
@@ -113,34 +136,44 @@
                             "children":
                             [
                                 {
-                                    "caption": "Fancy", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"style=fancy title",  "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Fancy", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"style=fancy title",  "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 {
-                                    "caption": "Plus Circle", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=plus-circle title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Plus Circle", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=plus-circle title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 {
-                                    "caption": "Plus Square", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=plus-square-1 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Plus Square", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=plus-square-1 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 {
-                                    "caption": "Arrow", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=arrow title",  "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Arrow", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=arrow title",  "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 {
-                                    "caption": "Arrow Circle Black", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=arrow-circle-1 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Arrow Circle Black", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=arrow-circle-1 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 {
-                                    "caption": "Arrow Circle White", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=arrow-circle-2 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Arrow Circle White", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=arrow-circle-2 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 {
-                                    "caption": "Caret", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=caret title", "use_header": "True", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Caret", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=caret title", "use_header": "True", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 {
-                                    "caption": "Caret Square", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=caret-square title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Caret Square", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=caret-square title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 {
-                                    "caption": "Folder Black", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=folder-1 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Folder Black", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=folder-1 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 {
-                                    "caption": "Folder White", "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=folder-2 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
+                                    "caption": "Folder White", 
+                                    "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_accordion]", "closing_tag": "[/su_accordion]", "sub_opening_tag":"[su_spoiler]", "sub_closing_tag":"[/su_spoiler]", "sub_attr":"icon=folder-2 title", "use_sub_header": "True", "sub_header_delimiter":"|"}, 
                                 },
                                 
                             ]
@@ -184,13 +217,16 @@
                         "children":
                         [
                             {
-                                "caption": "Standard", "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-standard color=#5f92bf"}
+                                "caption": "Standard", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-standard color=#5f92bf"}
                             },
                             {
-                                "caption": "Box", "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-box color=#5f92bf"}
+                                "caption": "Box", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-box color=#5f92bf"}
                             },
                             {
-                                "caption": "Circle", "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-circle color=#5f92bf"}
+                                "caption": "Circle", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-circle color=#5f92bf"}
                             },
 
                         ]
@@ -200,28 +236,36 @@
                         "children":
                         [
                             {
-                                "caption": "Dotted", "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-dotted"}
+                                "caption": "Dotted", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-dotted"}
                             },
                             {
-                                "caption": "Dashed", "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-dashed"}
+                                "caption": "Dashed", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-dashed"}
                             },
                             {
-                                "caption": "Double", "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-double"}
+                                "caption": "Double", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-double"}
                             },
                             {
-                                "caption": "Diagonal", "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-diagonal"}
+                                "caption": "Diagonal", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-diagonal"}
                             },
                             {
-                                "caption": "Wave", "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-wave"}
+                                "caption": "Wave", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-wave"}
                             },
                             {
-                                "caption": "Thick", "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-thick"}
+                                "caption": "Thick", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-thick"}
                             },
                             {
-                                "caption": "Thin", "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-thin"}
+                                "caption": "Thin", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-thin"}
                             },
                             {
-                                "caption": "Double Thick Thin", "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-double-thick-thin"}
+                                "caption": "Double Thick Thin", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-double-thick-thin"}
                             },
                         ]
                     },                
@@ -230,16 +274,20 @@
                         "children":
                         [
                             {
-                                "caption": "Arrow", "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-arrow-right"}
+                                "caption": "Arrow", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-arrow-right"}
                             },
                             {
-                                "caption": "Check", "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-ok"}
+                                "caption": "Check", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-ok"}
                             },
                             {
-                                "caption": "Plus", "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-plus"}
+                                "caption": "Plus", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-plus"}
                             },
                             {
-                                "caption": "Minus", "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-minus"}
+                                "caption": "Minus", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-minus"}
                             },
                         ]
                     },                
@@ -248,16 +296,20 @@
                         "children":
                         [
                             {
-                                "caption": "Blue", "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=blue", "newline": "False"}
+                                "caption": "Blue", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=blue", "newline": "False"}
                             },
                             {
-                                "caption": "Yellow", "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=yellow", "newline": "False"}
+                                "caption": "Yellow", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=yellow", "newline": "False"}
                             },                        
                             {
-                                "caption": "Red", "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=red", "newline": "False"}
+                                "caption": "Red", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=red", "newline": "False"}
                             },                        
                             {
-                                "caption": "Green", "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=green", "newline": "False"}
+                                "caption": "Green", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=green", "newline": "False"}
                             },                        
                         ]
                     },
@@ -266,7 +318,8 @@
                         "children":
                         [
                             {
-                                "caption": "Play", "command": "cwk_word_press_parser", "args": {"opening_tag": "[toggles]", "closing_tag": "[/toggles]", "sub_opening_tag":"[toggle]", "sub_closing_tag":"[/toggle]", "sub_attr":"icon=glyphicon-play icontype=glyphicon title", "use_sub_header":"True","sub_header_delimiter":"|"}, 
+                                "caption": "Play", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[toggles]", "closing_tag": "[/toggles]", "sub_opening_tag":"[toggle]", "sub_closing_tag":"[/toggle]", "sub_attr":"icon=glyphicon-play icontype=glyphicon title", "use_sub_header":"True","sub_header_delimiter":"|"}, 
                             },
                         ]
                     },                 
@@ -275,34 +328,44 @@
                         "children":
                         [
                             {
-                                "caption": "Raised Box", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow raised-box\""}, 
+                                "caption": "Raised Box", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow raised-box\""}, 
                             },
                             {
-                                "caption": "Left Perspective", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow left-perspective\""}, 
+                                "caption": "Left Perspective", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow left-perspective\""}, 
                             },
                             {
-                                "caption": "Right Perspective", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow right-perspective\""}, 
+                                "caption": "Right Perspective", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow right-perspective\""}, 
                             },
                             {
-                                "caption": "Two-Side Perspective", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow two-side-perspective\""}, 
+                                "caption": "Two-Side Perspective", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow two-side-perspective\""}, 
                             },
                             {
-                                "caption": "Left-Lifted Corner", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow left-lifted-corner\""}, 
+                                "caption": "Left-Lifted Corner", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow left-lifted-corner\""}, 
                             },
                             {
-                                "caption": "Right-Lifted Corner", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow right-lifted-corner\""}, 
+                                "caption": "Right-Lifted Corner", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow right-lifted-corner\""}, 
                             },
                             {
-                                "caption": "Both-Lifted Corner", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow both-lifted-corner\""}, 
+                                "caption": "Both-Lifted Corner", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow both-lifted-corner\""}, 
                             },
                             {
-                                "caption": "Vertical Curves", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow vertical-curves\""}, 
+                                "caption": "Vertical Curves", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow vertical-curves\""}, 
                             },
                             {
-                                "caption": "Horizontal Curves", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow horizontal-curves\""}, 
+                                "caption": "Horizontal Curves", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow horizontal-curves\""}, 
                             },
                             {
-                                "caption": "Single Horizontal Curves", "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow single-horizontal-curves\""}, 
+                                "caption": "Single Horizontal Curves", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow single-horizontal-curves\""}, 
                             },
                         ]
                     },                  
@@ -311,10 +374,12 @@
                         "children":
                         [
                             {
-                                "caption": "Large", "command": "cwk_word_press_parser", "args": {"opening_tag": "[well]", "closing_tag": "[/well]", "attr":"type=well-lg"}, 
+                                "caption": "Large", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[well]", "closing_tag": "[/well]", "attr":"type=well-lg"}, 
                             },
                             {
-                                "caption": "Small", "command": "cwk_word_press_parser", "args": {"opening_tag": "[well]", "closing_tag": "[/well]", "attr":"type=well-sm"}, 
+                                "caption": "Small", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[well]", "closing_tag": "[/well]", "attr":"type=well-sm"}, 
                             },
                         ]
                     },           
@@ -323,16 +388,20 @@
                         "children":
                         [
                             {
-                                "caption": "Warning", "command": "cwk_word_press_parser", "args": {"opening_tag": "[notification]", "closing_tag": "[/notification]", "attr":" type=\"alert-warning\" close=\"false\""}, 
+                                "caption": "Warning", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[notification]", "closing_tag": "[/notification]", "attr":" type=\"alert-warning\" close=\"false\""}, 
                             },
                             {
-                                "caption": "Success", "command": "cwk_word_press_parser", "args": {"opening_tag": "[notification]", "closing_tag": "[/notification]", "attr":" type=\"alert-success\" close=\"false\""}, 
+                                "caption": "Success", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[notification]", "closing_tag": "[/notification]", "attr":" type=\"alert-success\" close=\"false\""}, 
                             },
                             {
-                                "caption": "Information", "command": "cwk_word_press_parser", "args": {"opening_tag": "[notification]", "closing_tag": "[/notification]", "attr":" type=\"alert-information\" close=\"false\""}, 
+                                "caption": "Information", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[notification]", "closing_tag": "[/notification]", "attr":" type=\"alert-information\" close=\"false\""}, 
                             },
                             {
-                                "caption": "Danger", "command": "cwk_word_press_parser", "args": {"opening_tag": "[notification]", "closing_tag": "[/notification]", "attr":" type=\"alert-danger\" close=\"false\""}, 
+                                "caption": "Danger", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[notification]", "closing_tag": "[/notification]", "attr":" type=\"alert-danger\" close=\"false\""}, 
                             },
                         ]
                     },           
@@ -355,13 +424,16 @@
                 "children":
                 [
                     {
-                        "caption": "Shell", "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:sh decode:true"}
+                        "caption": "Shell", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:sh decode:true"}
                     },
                     {
-                        "caption": "PHP", "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:php decode:true"}
+                        "caption": "PHP", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:php decode:true"}
                     },
                     {
-                        "caption": "Python", "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:python decode:true"}
+                        "caption": "Python", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "theme:terminal lang:python decode:true"}
                     },                    
                 ]
             },

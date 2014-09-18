@@ -6,22 +6,22 @@ WordPress ToolKit Sublime Text 3 Plugin
 
 # Supported Plugins
 
-- Ultimate Shortcode
+- Shortcode Ultimate & Extra Shortcodes 
 - Easy Bootstrap Shortcode Pro & Add-ons
 - Crayon Syntax Highlighter
 - Easy WP LaTex
 
 # Shortcuts
 
-<kbd>CMD+CTRL+OPTION+Q</kbd>: Ultimate Shortcode Quote
+<kbd>CMD+CTRL+OPTION+Q</kbd>: Shortcode Ultimate Quote
 
-<kbd>CMD+CTRL+OPTION+N</kbd>: Ultimate Shortcode Note
+<kbd>CMD+CTRL+OPTION+N</kbd>: Shortcode Ultimate Note
 
-<kbd>CMD+CTRL+OPTION+A</kbd>: Ultimate Shortcode Animate (Defaults to Bounce in)
+<kbd>CMD+CTRL+OPTION+A</kbd>: Shortcode Ultimate Animate (Defaults to Bounce in)
 
-<kbd>CMD+CTRL+OPTION+B</kbd>: Ultimate Shortcode Box (Defaults to Bubbles) 
+<kbd>CMD+CTRL+OPTION+B</kbd>: Shortcode Ultimate Box (Defaults to Bubbles) 
 
-<kbd>CMD+CTRL+OPTION+P</kbd>: Ultimate Shortcode Spoiler (Defaults to Fancy)
+<kbd>CMD+CTRL+OPTION+P</kbd>: Shortcode Ultimate Spoiler (Defaults to Fancy)
 
 <kbd>CMD+CTRL+OPTION+M</kbd>: Easy WP LaTex Math
 

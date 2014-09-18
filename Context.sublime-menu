@@ -369,144 +369,169 @@
                 "children":
                 [          
                     {
-                        "caption": "Sticky",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[sticky]", "closing_tag": "[/sticky]"}
+                        "caption": "Badge",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[badge]", "closing_tag": "[/badge]", "attr":"bgcolor=#1e73be color=#ffffff  float_right=true value="}
+                    },                
+                    {
+                        "caption": "Google Maps",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[googlemap]", "closing_tag": "[/googlemap]", "attr":"width=false height=400 latitude=37.658401 longitude=126.764201 zoom=3 type=ROADMAP address="}
                     },                
                     {
                         "caption": "Jumbotron",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[jumbotron]", "closing_tag": "[/jumbotron]"}
                     },                
                     {
-                        "caption": "Testimonial",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[testimonial]", "closing_tag": "[/testimonial]", "attr":"author=\"Wankyu Choi\""}
-                    },                
+                        "caption": "Lead",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[lead]", "closing_tag": "[/lead]", "attr":"align=left"}
+                    },                                        
                     {
                         "caption": "Popover",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[popover]", "closing_tag": "[/popover]", "attr":"title=\"title\" pop_content=\"content\" trigger=\"hover\" style=\"auto\" size=\"\" type=\"btn-default\"",  "newline" : "False"}
-                    },                     
+                    },
+                    {
+                        "caption": "Slider",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[slider]", "closing_tag": "[/slider]", "attr":"interval=1000 captioncolor=#444444 navcolor=#f4f4f4 controls=true pause=hover", "sub_opening_tag":"[slide title=\"title\" image=\"src\" caption=\"caption\" /]", "sub_closing_tag":""}
+                    },        
+                    {
+                        "caption": "Sticky",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[sticky]", "closing_tag": "[/sticky]"}
+                    },
+                    {
+                        "caption": "Tabs",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[tabs]", "closing_tag": "[/tabs]", "attr":"responsive=true pills=nav-pills icon=glyphicon-chevron-down icontype=glyphicon text=More", "sub_opening_tag":"[tab]", "sub_closing_tag":"[/tab]", "sub_attr":"title=", "use_sub_header":"True"}
+                    },        
+                    {
+                        "caption": "Testimonial",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[testimonial]", "closing_tag": "[/testimonial]", "attr":"author=\"Wankyu Choi\""}
+                    },                                                                                             
                     {
                         "caption": "Tooltip",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[tooltip]", "closing_tag": "[/tooltip]", "attr":"type=link link=# style=auto tooltip=", "use_header" : "True", "newline" : "False"}
+                    },                         
+                    {
+                        "caption": "Vertical Space",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[space]", "closing_tag": "[/space]", "attr":"height=30"}
                     },                
                     {
                         "caption": "YouTube Video",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[oscvideo]", "closing_tag": "", "attr":"type=youtube dimension=\"16by9\" link=", "use_header":"True"}
                     },                               
                     {
-                        "caption": "Letter Effect",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=\"spin fade grow smear fall swirl wave fly-top fly-bottom fly-left fly-right\" effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
-                    },                
+                        "caption": "Vimeo Video",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[oscvideo]", "closing_tag": "", "attr":"type=vimeo dimension=\"16by9\" link=", "use_header":"True"}
+                    },                              
                     {
-                        "caption": "Drop Caps",
-                        "children":
-                        [
-                            {
-                                "caption": "Standard", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-standard color=#5f92bf"}
-                            },
-                            {
-                                "caption": "Box", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-box color=#5f92bf"}
-                            },
-                            {
-                                "caption": "Circle", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-circle color=#5f92bf"}
-                            },
-
-                        ]
-                    },                
-                    {
-                        "caption": "Separator",
-                        "children":
-                        [
-                            {
-                                "caption": "Dotted", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-dotted"}
-                            },
-                            {
-                                "caption": "Dashed", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-dashed"}
-                            },
-                            {
-                                "caption": "Double", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-double"}
-                            },
-                            {
-                                "caption": "Diagonal", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-diagonal"}
-                            },
-                            {
-                                "caption": "Wave", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-wave"}
-                            },
-                            {
-                                "caption": "Thick", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-thick"}
-                            },
-                            {
-                                "caption": "Thin", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-thin"}
-                            },
-                            {
-                                "caption": "Double Thick Thin", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-double-thick-thin"}
-                            },
-                        ]
-                    },                
-                    {
-                        "caption": "List",
-                        "children":
-                        [
-                            {
-                                "caption": "Arrow", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-arrow-right"}
-                            },
-                            {
-                                "caption": "Check", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-ok"}
-                            },
-                            {
-                                "caption": "Plus", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-plus"}
-                            },
-                            {
-                                "caption": "Minus", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-minus"}
-                            },
-                        ]
-                    },                
-                    {
-                        "caption": "Highligts",
-                        "children":
-                        [
-                            {
-                                "caption": "Blue", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=blue", "newline": "False"}
-                            },
-                            {
-                                "caption": "Yellow", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=yellow", "newline": "False"}
-                            },                        
-                            {
-                                "caption": "Red", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=red", "newline": "False"}
-                            },                        
-                            {
-                                "caption": "Green", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=green", "newline": "False"}
-                            },                        
-                        ]
-                    },
+                        "caption": "Widget",
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[oscwidget]", "closing_tag": "", "attr":"type=WP_Widget_Calendar attr=\"\"", "use_header":"True"}
+                    },                               
                   {
-                        "caption": "Toggles",
+                        "caption": "Accordion",
                         "children":
                         [
                             {
                                 "caption": "Play", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[toggles]", "closing_tag": "[/toggles]", "sub_opening_tag":"[toggle]", "sub_closing_tag":"[/toggle]", "sub_attr":"icon=glyphicon-play icontype=glyphicon title", "use_sub_header":"True","sub_header_delimiter":"|"}, 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[toggles]", "closing_tag": "[/toggles]", "sub_opening_tag":"[toggle]", "sub_closing_tag":"[/toggle]", "sub_attr":"oicon=true icon=glyphicon-play icontype=glyphicon iconcolor=#dd3333 title", "use_sub_header":"True","sub_header_delimiter":"|"}, 
+                            },
+                            {
+                                "caption": "Pencil", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[toggles]", "closing_tag": "[/toggles]", "sub_opening_tag":"[toggle]", "sub_closing_tag":"[/toggle]", "sub_attr":"oicon=true icon=glyphicon-pencil icontype=glyphicon iconcolor=#dd3333 title", "use_sub_header":"True","sub_header_delimiter":"|"}, 
+                            },
+                            {
+                                "caption": "Remove", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[toggles]", "closing_tag": "[/toggles]", "sub_opening_tag":"[toggle]", "sub_closing_tag":"[/toggle]", "sub_attr":"oicon=true icon=glyphicon-remove icontype=glyphicon iconcolor=#dd3333 title", "use_sub_header":"True","sub_header_delimiter":"|"}, 
                             },
                         ]
-                    },                 
+                    },
+                  {
+                        "caption": "Animation",
+                        "children":
+                        [
+                            {
+                                "caption": "Pulse", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=pulse time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "flipInX", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=flipInX time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "fadeIn", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeIn time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "fadeInUp", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInUp time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "fadeInLeft", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInLeft time=everytime duration=3 delay=0.5"}, 
+                            },                            
+                            {
+                                "caption": "fadeInRight", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInRight time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "fadeInDown", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInDown time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "fadeInUpBig", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInUpBig time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "fadeInDownBig", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInDownBig time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "fadeInRightBig", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=fadeInRightBig time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "bounceIn", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=bounceIn time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "bounceInDown", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=bounceInDown time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "bounceInLeft", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=bounceInLeft time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "bounceInRight", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=bounceInRight time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "rotateInUpLeft", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rotateInUpLeft time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "rotateInDownLeft", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rotateInDownLeft time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "rotateInUpRight", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rotateInUpRight time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "rotateInDownRight", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rotateInDownRight time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "lightSpeedRight", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=lightSpeedRight time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "lightSpeedLeft", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=lightSpeedLeft time=everytime duration=3 delay=0.5"}, 
+                            },
+                            {
+                                "caption": "rollin", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[animation]", "closing_tag": "[/animation]", "attr": "effect=rollin time=everytime duration=3 delay=0.5"}, 
+                            },
+                        ]
+                    },
                     {
                         "caption": "BoxFrame",
                         "children":
@@ -552,21 +577,351 @@
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[frame]", "closing_tag": "[/frame]", "attr":"bgcolor=#ededed fgcolor=#000000 shadow=\"ebs_shadow shadow single-horizontal-curves\""}, 
                             },
                         ]
-                    },                  
+                    },                                         
                     {
-                        "caption": "Well",
+                        "caption": "Buttons",
                         "children":
                         [
                             {
-                                "caption": "Large", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[well]", "closing_tag": "[/well]", "attr":"type=well-lg"}, 
+                                "caption": "Default", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[button]", "closing_tag": "[/button]", "attr": "style=\"btn-default btn-lg\" icon=glyphicon-align-justify align=left type=link target=yes link=\"#\" title="}
                             },
                             {
-                                "caption": "Small", 
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[well]", "closing_tag": "[/well]", "attr":"type=well-sm"}, 
+                                "caption": "Primary", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[button]", "closing_tag": "[/button]", "attr": "style=\"btn-primary btn-lg\" icon=glyphicon-align-justify align=left type=link target=yes link=\"#\" title="}
+                            },
+                            {
+                                "caption": "Success", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[button]", "closing_tag": "[/button]", "attr": "style=\"btn-success btn-lg\" icon=glyphicon-align-justify align=left type=link target=yes link=\"#\" title="}
+                            },
+                            {
+                                "caption": "Info", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[button]", "closing_tag": "[/button]", "attr": "style=\"btn-info btn-lg\" icon=glyphicon-align-justify align=left type=link target=yes link=\"#\" title="}
+                            },
+                            {
+                                "caption": "Warning", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[button]", "closing_tag": "[/button]", "attr": "style=\"btn-warning btn-lg\" icon=glyphicon-align-justify align=left type=link target=yes link=\"#\" title="}
+                            },
+                            {
+                                "caption": "Danger", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[button]", "closing_tag": "[/button]", "attr": "style=\"btn-danger btn-lg\" icon=glyphicon-align-justify align=left type=link target=yes link=\"#\" title="}
+                            },
+                            {
+                                "caption": "Link", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[button]", "closing_tag": "[/button]", "attr": "style=\"btn-link btn-lg\" icon=glyphicon-align-justify align=left type=link target=yes link=\"#\" title="}
                             },
                         ]
-                    },           
+                    },                       
+                    {
+                        "caption": "Columns",
+                        "children":
+                        [
+                            {
+                                "caption": "Default", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[row]", "closing_tag": "[/row]", "sub_opening_tag": "[column]", "sub_closing_tag":"[/column]", "sub_attr": "lg=6 lgoff=4 smhide=yes animation=pulse"}
+                            },
+
+                        ]
+                    },                            
+                    {
+                        "caption": "Content Slider",
+                        "children":
+                        [
+                            {
+                                "caption": "Default", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[content_slider]", "closing_tag": "[/content_slider]", "sub_opening_tag": "[content_slide]", "sub_closing_tag":"[/content_slide]", "attr": "interval=1200 navcolor=#dd9933 navigation=true bullets=true pause=true"}
+                            },
+                            {
+                                "caption": "Fade", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[content_slider]", "closing_tag": "[/content_slider]", "sub_opening_tag": "[content_slide]", "sub_closing_tag":"[/content_slide]", "attr": "transition=fade interval=1200 navcolor=#dd9933 navigation=true bullets=true pause=true"}
+                            },
+                            {
+                                "caption": "Back Slide", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[content_slider]", "closing_tag": "[/content_slider]", "sub_opening_tag": "[content_slide]", "sub_closing_tag":"[/content_slide]", "attr": "transition=backSlide interval=1200 navcolor=#dd9933 navigation=true bullets=true pause=true"}
+                            },
+                            {
+                                "caption": "Go Down", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[content_slider]", "closing_tag": "[/content_slider]", "sub_opening_tag": "[content_slide]", "sub_closing_tag":"[/content_slide]", "attr": "transition=goDown interval=1200 navcolor=#dd9933 navigation=true bullets=true pause=true"}
+                            },
+                            {
+                                "caption": "Fade Up", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[content_slider]", "closing_tag": "[/content_slider]", "sub_opening_tag": "[content_slide]", "sub_closing_tag":"[/content_slide]", "attr": "transition=fadeUp interval=1200 navcolor=#dd9933 navigation=true bullets=true pause=true"}
+                            },
+
+                        ]
+                    },                                
+                    {
+                        "caption": "Description List",
+                        "children":
+                        [
+                            {
+                                "caption": "Vertical", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dl]", "closing_tag": "[/dl]", "sub_opening_tag": "[dlitem]", "sub_closing_tag":"[/dlitem]", "attr":"style=none", "sub_attr": "heading=", "use_sub_header":"True", "sub_header_delimiter":"|"}
+                            },
+                            {
+                                "caption": "Horizontal", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dl]", "closing_tag": "[/dl]", "sub_opening_tag": "[dlitem]", "sub_closing_tag":"[/dlitem]", "attr":"style=dl-horizontal", "sub_attr": "heading=", "use_sub_header":"True", "sub_header_delimiter":"|"}
+                            },
+                        ]
+                    },                            
+                    {
+                        "caption": "Drop Caps",
+                        "children":
+                        [
+                            {
+                                "caption": "Standard", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-standard color=#5f92bf"}
+                            },
+                            {
+                                "caption": "Box", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-box color=#5f92bf"}
+                            },
+                            {
+                                "caption": "Circle", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[dropcaps]", "closing_tag": "[/dropcaps]", "attr": "style=dropcap-circle color=#5f92bf"}
+                            },
+
+                        ]
+                    },
+                    {
+                        "caption": "Highligts",
+                        "children":
+                        [
+                            {
+                                "caption": "Blue", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=blue", "newline": "False"}
+                            },
+                            {
+                                "caption": "Yellow", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=yellow", "newline": "False"}
+                            },                        
+                            {
+                                "caption": "Red", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=red", "newline": "False"}
+                            },                        
+                            {
+                                "caption": "Green", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=green", "newline": "False"}
+                            },                        
+                        ]
+                    },                    
+                    {
+                        "caption": "Horizontal Rule",
+                        "children":
+                        [
+                            {
+                                "caption": "Default", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-line"}
+                            },
+                            {
+                                "caption": "Dotted", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-dotted"}
+                            },
+                            {
+                                "caption": "Dashed", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-dashed"}
+                            },
+                            {
+                                "caption": "Double", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-double"}
+                            },
+                            {
+                                "caption": "Double Thick Thin", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-double-thick-thin"}
+                            },
+                            {
+                                "caption": "Fade Corder", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-fadecorder"}
+                            },
+                            {
+                                "caption": "Shadow", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-shadow"}
+                            },
+                            {
+                                "caption": "Diagonal", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-diagonal"}
+                            },
+                            {
+                                "caption": "Wave", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-wave"}
+                            },
+                            {
+                                "caption": "Thick", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-thick"}
+                            },
+                            {
+                                "caption": "Thin", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[rule]", "closing_tag": "[/rule]", "attr": "margin=10 style=rule-thin"}
+                            },
+                        ]
+                    },
+
+                    {
+                        "caption": "Icon Heading",
+                        "children":
+                        [
+                            {
+                                "caption": "Heading 1", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[iconheading]", "closing_tag": "[/iconheading]", "attr": "type=h1 style=fa-apple icontype=fa color=#adadad"}
+                            },
+                            {
+                                "caption": "Heading 2", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[iconheading]", "closing_tag": "[/iconheading]", "attr": "type=h2 style=fa-apple icontype=fa color=#adadad"}
+                            },
+                            {
+                                "caption": "Heading 3", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[iconheading]", "closing_tag": "[/iconheading]", "attr": "type=h3 style=fa-apple icontype=fa color=#adadad"}
+                            },
+                            {
+                                "caption": "Heading 4", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[iconheading]", "closing_tag": "[/iconheading]", "attr": "type=h4 style=fa-apple icontype=fa color=#adadad"}
+                            },
+                        ]
+                    },                      
+                    {
+                        "caption": "Image Effect",
+                        "children":
+                        [
+                            {
+                                "caption": "Rounded", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[image]", "closing_tag": "[/image]", "attr": "shape=img-rounded src="}
+                            },
+                            {
+                                "caption": "Circle", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[image]", "closing_tag": "[/image]", "attr": "shape=img-circle src="}
+                            },
+                            {
+                                "caption": "Thumbnail", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[image]", "closing_tag": "[/image]", "attr": "shape=img-thumbnail src="}
+                            },
+                        ]
+                    },                      
+                    {
+                        "caption": "Label",
+                        "children":
+                        [
+                            {
+                                "caption": "Default", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[label]", "closing_tag": "[/label]", "attr": "type=label-default"}
+                            },
+                            {
+                                "caption": "Info", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[label]", "closing_tag": "[/label]", "attr": "type=label-info"}
+                            },
+                            {
+                                "caption": "Danger", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[label]", "closing_tag": "[/label]", "attr": "type=label-danger"}
+                            },
+                            {
+                                "caption": "Primary", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[label]", "closing_tag": "[/label]", "attr": "type=label-primary"}
+                            },
+                            {
+                                "caption": "Success", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[label]", "closing_tag": "[/label]", "attr": "type=label-success"}
+                            },                            
+                            {
+                                "caption": "Warning", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[label]", "closing_tag": "[/label]", "attr": "type=label-warning"}
+                            },
+                        ]
+                    },  
+                    {
+                        "caption": "Letter Effect",
+                        "children":
+                        [
+                            {
+                                "caption": "Spin", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=spin effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Fade", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=fade effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Fly Left", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=fly-left effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Fly Right", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=fly-right effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Fly Top", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=fly-top effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Fly Bottom", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=fly-bottom effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Grow", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=grow effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Smear", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=smear effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Fall", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=fall effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Swirl", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=swirl effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                            {
+                                "caption": "Wave", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[letter_effect]", "closing_tag": "[/letter_effect]", "attr":"fx=wave effect_time=everytime letter_end=restore element_end=restore backwards=false timing=50 fx_duration=50"}
+                            },
+                        ]
+                    },
+                    {
+                        "caption": "List",
+                        "children":
+                        [
+                            {
+                                "caption": "Arrow", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-arrow-right"}
+                            },
+                            {
+                                "caption": "Check", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-ok"}
+                            },
+                            {
+                                "caption": "Plus", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-plus"}
+                            },
+                            {
+                                "caption": "Minus", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-minus"}
+                            },
+                            {
+                                "caption": "Star", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "icon=fa-star icontype=fa iconcolor=#1ab373"}
+                            },
+                            {
+                                "caption": "Apple", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "icon=fa-apple icontype=fa iconcolor=#1ab373"}
+                            },
+                            {
+                                "caption": "Git", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "icon=fa-git icontype=fa iconcolor=#1ab373"}
+                            },
+                            {
+                                "caption": "WordPress", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "icon=fa-wordpress icontype=fa iconcolor=#1ab373"}
+                            },
+                            {
+                                "caption": "Linux", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "icon=fa-linux icontype=fa iconcolor=#1ab373"}
+                            },
+                            {
+                                "caption": "Windows", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "icon=fa-windows icontype=fa iconcolor=#1ab373"}
+                            },
+                        ]
+                    },              
                     {
                         "caption": "Notification",
                         "children":
@@ -588,9 +943,147 @@
                                 "command": "cwk_word_press_parser", "args": {"opening_tag": "[notification]", "closing_tag": "[/notification]", "attr":" type=\"alert-danger\" close=\"false\""}, 
                             },
                         ]
+                    },                      
+                    {
+                        "caption": "Panel",
+                        "children":
+                        [
+                            {
+                                "caption": "Default", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[panel]", "closing_tag": "[/panel]", "attr":"style=panel-default", "sub_opening_tag":"[panel-heading]\n[/panel-heading]\n[panel-content]", "sub_closing_tag":"[/panel-content]\n[panel-footer]\n[/panel-footer]"}, 
+                            },
+                            {
+                                "caption": "Danger", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[panel]", "closing_tag": "[/panel]", "attr":"style=panel-danger", "sub_opening_tag":"[panel-heading]\n[/panel-heading]\n[panel-content]", "sub_closing_tag":"[/panel-content]\n[panel-footer]\n[/panel-footer]"}, 
+                            },
+                            {
+                                "caption": "Info", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[panel]", "closing_tag": "[/panel]", "attr":"style=panel-info", "sub_opening_tag":"[panel-heading]\n[/panel-heading]\n[panel-content]", "sub_closing_tag":"[/panel-content]\n[panel-footer]\n[/panel-footer]"}, 
+                            },
+                            {
+                                "caption": "Primary", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[panel]", "closing_tag": "[/panel]", "attr":"style=panel-primary", "sub_opening_tag":"[panel-heading]\n[/panel-heading]\n[panel-content]", "sub_closing_tag":"[/panel-content]\n[panel-footer]\n[/panel-footer]"}, 
+                            },
+                            {
+                                "caption": "Success", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[panel]", "closing_tag": "[/panel]", "attr":"style=panel-success", "sub_opening_tag":"[panel-heading]\n[/panel-heading]\n[panel-content]", "sub_closing_tag":"[/panel-content]\n[panel-footer]\n[/panel-footer]"}, 
+                            },
+                            {
+                                "caption": "Warning", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[panel]", "closing_tag": "[/panel]", "attr":"style=panel-warning", "sub_opening_tag":"[panel-heading]\n[/panel-heading]\n[panel-content]", "sub_closing_tag":"[/panel-content]\n[panel-footer]\n[/panel-footer]"}, 
+                            },
+                        ]
+                    },                                 
+                    {
+                        "caption": "Progressive Bar/Pie",
+                        "children":
+                        [
+                            {
+                                "caption": "Default", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[progressbar]", "closing_tag": "[/progressbar]", "attr":"type=default value=90 bartype=progressive-bar-default barstyle=progressive-striped label=", "use_header":"True"}, 
+                            },
+                            {
+                                "caption": "Danger", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[progressbar]", "closing_tag": "[/progressbar]", "attr":"type=default value=90 bartype=progressive-bar-danger barstyle=progressive-striped label=", "use_header":"True"}, 
+                            },
+                            {
+                                "caption": "Info", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[progressbar]", "closing_tag": "[/progressbar]", "attr":"type=default value=90 bartype=progressive-bar-info barstyle=progressive-striped label=", "use_header":"True"}, 
+                            },
+                            {
+                                "caption": "Success", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[progressbar]", "closing_tag": "[/progressbar]", "attr":"type=default value=90 bartype=progressive-bar-success barstyle=progressive-striped label=", "use_header":"True"}, 
+                            },
+                            {
+                                "caption": "Warning", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[progressbar]", "closing_tag": "[/progressbar]", "attr":"type=default value=90 bartype=progressive-bar-warning barstyle=progressive-striped label=", "use_header":"True"}, 
+                            },                            
+                            {
+                                "caption": "Pie Full", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[progressbar]", "closing_tag": "[/progressbar]", "attr":"type=custom circletype=full barcolor=#e1574c bgcolor=#ffffff fillcolor=#f0c75e fontcolor=#282828 fontsize=26 size=201 pbwidth=24 border=outline value=90 icon=\"fa fa-user\" iconsize=39 iconcolor=#191919 label=", "use_header":"True"}, 
+                            },
+                            {
+                                "caption": "Pie Half", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[progressbar]", "closing_tag": "[/progressbar]", "attr":"type=custom circletype=half barcolor=#e1574c bgcolor=#ffffff fillcolor=#f0c75e fontcolor=#282828 fontsize=26 size=201 pbwidth=24 border=outline value=90 icon=\"fa fa-user\" iconsize=39 iconcolor=#191919 label=", "use_header":"True"}, 
+                            },
+                        ]
+                    },                                                        
+                    {
+                        "caption": "Separator",
+                        "children":
+                        [
+                            {
+                                "caption": "Dotted", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-dotted"}
+                            },
+                            {
+                                "caption": "Dashed", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-dashed"}
+                            },
+                            {
+                                "caption": "Double", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-double"}
+                            },
+                            {
+                                "caption": "Diagonal", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-diagonal"}
+                            },
+                            {
+                                "caption": "Wave", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-wave"}
+                            },
+                            {
+                                "caption": "Thick", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-thick"}
+                            },
+                            {
+                                "caption": "Thin", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-thin"}
+                            },
+                            {
+                                "caption": "Double Thick Thin", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[separator]", "closing_tag": "[/separator]", "attr": "style=separator-double-thick-thin"}
+                            },
+                        ]
+                    },                                       
+                    {
+                        "caption": "Service Box",
+                        "children":
+                        [
+                            {
+                                "caption": "Heading 1", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[servicebox]", "closing_tag": "[/servicebox]", "attr":"icon=glyphicon-asterisk icontype=glyphicon iconbg=iconcircle iconbgcolor=#FFFFFF iconcolor=#777777 headingtype=h1 iconhover=default boxstyle=default hover=default readmorestyle=default heading=", "use_header":"True"}, 
+                            },
+                            {
+                                "caption": "Heading 2", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[servicebox]", "closing_tag": "[/servicebox]", "attr":"icon=glyphicon-asterisk icontype=glyphicon iconbg=iconcircle iconbgcolor=#FFFFFF iconcolor=#777777 headingtype=h2 iconhover=default boxstyle=default hover=default readmorestyle=default heading=", "use_header":"True"}, 
+                            },
+                            {
+                                "caption": "Heading 3", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[servicebox]", "closing_tag": "[/servicebox]", "attr":"icon=glyphicon-asterisk icontype=glyphicon iconbg=iconcircle iconbgcolor=#FFFFFF iconcolor=#777777 headingtype=h3 iconhover=default boxstyle=default hover=default readmorestyle=default heading=", "use_header":"True"}, 
+                            },
+                            {
+                                "caption": "Heading 4", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[servicebox]", "closing_tag": "[/servicebox]", "attr":"icon=glyphicon-asterisk icontype=glyphicon iconbg=iconcircle iconbgcolor=#FFFFFF iconcolor=#777777 headingtype=h4 iconhover=default boxstyle=default hover=default readmorestyle=default heading=", "use_header":"True"}, 
+                            },
+                        ]
+                    },   
+                    {
+                        "caption": "Well",
+                        "children":
+                        [
+                            {
+                                "caption": "Large", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[well]", "closing_tag": "[/well]", "attr":"type=well-lg"}, 
+                            },
+                            {
+                                "caption": "Small", 
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[well]", "closing_tag": "[/well]", "attr":"type=well-sm"}, 
+                            },
+                        ]
                     },           
                     ]
-            },
+            },            
             {
                 "caption": "WP Easy LaTex",
                 "children":

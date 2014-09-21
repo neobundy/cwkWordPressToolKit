@@ -1360,6 +1360,10 @@
                         "caption": "Vim", 
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:Vim decode:true\""}
                     },
+                    {
+                        "caption": "Visual Basic", 
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:vbnet decode:true\""}
+                    },
 
                 ]
             },

@@ -8,5 +8,6 @@
         { "keys": ["super+ctrl+option+i"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[list]", "closing_tag": "[/list]", "sub_opening_tag": "[li]", "sub_closing_tag":"[/li]", "sub_attr": "type=glyphicon-arrow-right"}},
         { "keys": ["super+ctrl+option+h"], "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:sh decode:true\""}},
         { "keys": ["super+ctrl+option+y"], "command": "cwk_word_press_parser", "args": {"opening_tag": "<pre>", "closing_tag": "</pre>", "attr": "class=\"lang:pyton decode:true\""}},
+        { "keys": ["super+ctrl+option+v"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_youtube]", "closing_tag": "</su_youtube>", "attr": "autoplay=no url", "use_header":"True"}},
         { "keys": ["super+ctrl+option+b"], "command": "cwk_word_press_parser", "args": {"opening_tag": "[highlights]", "closing_tag": "[/highlights]", "attr": "type=existing highlight=blue", "newline":"False"}},
 ]

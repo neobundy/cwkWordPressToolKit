@@ -58,7 +58,7 @@
 
                     },        
                     {
-                        "caption": "Serive Box",
+                        "caption": "Service Box",
                         "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_service]", "closing_tag": "[/su_service]", "attr": "icone=\"icon: check\" icon_color=#333333 size=32 title=", "use_header":"True"}
 
                     },                                
@@ -234,19 +234,19 @@
                         [
                             {
                                 "caption": "YouTube",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_youtube]", "closing_tag": "[/su_youtube]", "attr":"autoplay=no url=", "use_header":"True"}
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_youtube]", "closing_tag": "[/su_youtube]", "attr":"autoplay=no url", "use_header":"True"}
                             },
                             {
                                 "caption": "Vimeo",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_vimeo]", "closing_tag": "[/su_vimeo]", "attr":"url=", "use_header":"True"}
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_vimeo]", "closing_tag": "[/su_vimeo]", "attr":"url", "use_header":"True"}
                             },
                             {
                                 "caption": "Self-Hosted Video",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_video]", "closing_tag": "[/su_video]", "attr":"url=", "use_header":"True"}
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_video]", "closing_tag": "[/su_video]", "attr":"url", "use_header":"True"}
                             },
                             {
                                 "caption": "Self-Hosted Audio",
-                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_audio]", "closing_tag": "[/su_audio]", "attr":"url=", "use_header":"True"}
+                                "command": "cwk_word_press_parser", "args": {"opening_tag": "[su_audio]", "closing_tag": "[/su_audio]", "attr":"url", "use_header":"True"}
                             },
                         ]
                     },                                                       
@@ -602,7 +602,7 @@
                     },                                                                                             
                     {
                         "caption": "Tooltip",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[tooltip]", "closing_tag": "[/tooltip]", "attr":"type=link link=# style=auto tooltip=", "use_header" : "True", "newline" : "False"}
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[tooltip]", "closing_tag": "[/tooltip]", "attr":"type=link link=# style=auto tooltip", "use_header" : "True", "newline" : "False"}
                     },                         
                     {
                         "caption": "Vertical Space",
@@ -610,11 +610,11 @@
                     },                
                     {
                         "caption": "Video - YoutTube",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[oscvideo]", "closing_tag": "", "attr":"type=youtube dimension=\"16by9\" link=", "use_header":"True"}
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[oscvideo]", "closing_tag": "", "attr":"type=youtube dimension=\"16by9\" link", "use_header":"True"}
                     },                               
                     {
                         "caption": "Video - Vimeo",
-                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[oscvideo]", "closing_tag": "", "attr":"type=vimeo dimension=\"16by9\" link=", "use_header":"True"}
+                        "command": "cwk_word_press_parser", "args": {"opening_tag": "[oscvideo]", "closing_tag": "", "attr":"type=vimeo dimension=\"16by9\" link", "use_header":"True"}
                     },                              
                     {
                         "caption": "Widget",
